@@ -77,7 +77,7 @@ void reshape(int w, int h)
 void timer(int value)
 {
     glutPostRedisplay();
-    glutTimerFunc(10, timer, value);    // 25ミリ秒後にまたタイマー関数を呼ぶ
+    glutTimerFunc(20, timer, value);    // 25ミリ秒後にまたタイマー関数を呼ぶ
 }
 
 void specialkeyboard(int key, int x, int y)

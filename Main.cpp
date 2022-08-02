@@ -13,8 +13,9 @@ void UI();
 int main(int argc, char* argv[])
 {
 	UI();
-	//Particles.resize(N);
 	Particles = new Chaos::Particle[N];
+
+	//Initial positions of the particles
 	Particles[0].ParticleInit(Iter, 0.1, 0.2, 0.2);
 	Particles[1].ParticleInit(Iter, 0.1, 0.2, 0.3);
 	Particles[2].ParticleInit(Iter, 0.1, 0.3, 0.2);
