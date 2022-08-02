@@ -26,15 +26,16 @@ void DrawAxes(void)
     glDisable(GL_LIGHTING);
 
     glBegin(GL_LINES);
-    glColor3f(1.f, 0.f, 0.f);//Xé≤:ê‘
+    //x-axis
+    glColor3f(1.f, 0.f, 0.f);
     glVertex3f(0.f, 0.f, 0.f);
     glVertex3f(1.f, 0.f, 0.f);
-
-    glColor3f(0.f, 1.f, 0.f);//Yé≤:óŒ
+    //y-axis
+    glColor3f(0.f, 1.f, 0.f);
     glVertex3f(0.f, 0.f, 0.f);
     glVertex3f(0.f, 1.f, 0.f);
-
-    glColor3f(0.f, 0.f, 1.f);//Zé≤:ê¬
+    //z-axis
+    glColor3f(0.f, 0.f, 1.f);
     glVertex3f(0.f, 0.f, 0.f);
     glVertex3f(0.f, 0.f, 1.f);
     glEnd();
@@ -117,7 +118,7 @@ void GlMain(int argc, char* argv[])
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
     glutInitWindowSize(640, 480);
-    glutCreateWindow("Three Scrolls Unified Chaotic System by Rakibul Islam");
+    glutCreateWindow("Simulation of a Chaotic System by Rakibul Islam");
 
     glutDisplayFunc(GlDisplay);
     glutReshapeFunc(reshape);
